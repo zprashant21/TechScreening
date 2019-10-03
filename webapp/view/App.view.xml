@@ -1,0 +1,4 @@
+<mvc:View controllerName="com.gyansys.Screening_technical.controller.App" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:html="http://www.w3.org/1999/xhtml" displayBlock="true" xmlns="sap.m">
+	<App id="idAppControl"></App>
+</mvc:View>

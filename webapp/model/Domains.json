@@ -1,0 +1,89 @@
+{
+	"domain": [{
+		"id": "domain1",
+		"name": "Strategic",
+		"subDomain": [{
+			"id": "subDomain1",
+			"name": "SAP Technical"
+		}, {
+			"id": "subDomain2",
+			"name": "SAP Analytical"
+		}, {
+			"id": "subDomain3",
+			"name": "Salesforce"
+		}]
+	}, {
+		"id": "domain2",
+		"name": "Project",
+		"subDomain": [{
+			"id": "subDomain1",
+			"name": "HUL"
+		}, {
+			"id": "subDomain2",
+			"name": "AMAT"
+		}]
+	}],
+	"tableData": [{
+			"Domain": "Project",
+			"Sub Domain": "HUL",
+			"Job Code": "G2091",
+			"Job Description": "ABAP DEVELOPER",
+			"Job Position": "ABAP DEVELOPER",
+			"Raised By": "Deepak",
+			"Raised On": "10 july"
+
+		}, {
+			"Domain": "Project",
+			"Sub Domain": "Amat",
+			"Job Code": "G2092",
+			"Job Description": "ABAP DEVELOPER",
+			"Job Position": "ABAP DEVELOPER",
+			"Raised By": "Deepak",
+			"Raised On": "10 july"
+
+		}, {
+			"Domain": "Project",
+			"Sub Domain": "HUL",
+			"Job Code": "G2093",
+			"Job Description": "ABAP DEVELOPER",
+			"Job Position": "ABAP DEVELOPER",
+			"Raised By": "Deepak",
+			"Raised On": "10 july"
+
+		}, {
+			"Domain": "Strategic",
+			"Sub Domain": "SAP Technical",
+			"Job Code": "G2094",
+			"Job Description": "ABAP DEVELOPER",
+			"Job Position": "ABAP DEVELOPER",
+			"Raised By": "Deepak",
+			"Raised On": "10 july"
+
+		}, {
+			"Domain": "Strategic",
+			"Sub Domain": "SAP Analytical",
+			"Job Code": "G2095",
+			"Job Description": "ABAP DEVELOPER",
+			"Job Position": "ABAP DEVELOPER",
+			"Raised By": "Deepak",
+			"Raised On": "10 july"
+
+		}, {
+			"Domain": "Strategic",
+			"Sub Domain": "Salesforce",
+			"Job Code": "G2096",
+			"Job Description": "ABAP DEVELOPER",
+			"Job Position": "ABAP DEVELOPER",
+			"Raised By": "Deepak",
+			"Raised On": "10 july"
+
+		}, {
+			"Domain": "Strategic",
+			"Sub Domain": "Salesforce",
+			"Job Code": "G2097",
+			"Job Description": "ABAP DEVELOPER",
+			"Job Position": "ABAP DEVELOPER",
+			"Raised By": "Deepak",
+			"Raised On": "10 july"
+	}]
+}

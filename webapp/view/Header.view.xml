@@ -1,0 +1,121 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="com.gyansys.Screening_technical.controller.Header" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:f="sap.ui.layout.form">
+	<Page title="Header">
+		<content>
+			<f:SimpleForm id="SimpleFormChange354wide" editable="true" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="4" labelSpanM="4"
+				labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" emptySpanM="1" emptySpanS="0" columnsXL="4" columnsL="4" columnsM="4"
+				singleContainerFullSize="false">
+				<f:content>
+					<core:Title/>
+					<Label id="domain" text="Domain" required="true"></Label>
+					<ComboBox id="domainCombo" items="{domains>/domain}" selectionChange="onDomainSelection">
+						<core:Item key="{domains>id}" text="{domains>name}"/>
+					</ComboBox>
+					<core:Title/>
+					<Label id="Subdomain" required="true" text="Sub Domain" width="auto"></Label>
+					<ComboBox id="subDomainCombo" items="{subDomains>/subDomain}">
+						<core:Item key="{subDomains>id}" text="{subDomains>name}"/>
+					</ComboBox>
+					<core:Title/>
+					<Label id="jobcode" text="Job Code" required="true"/>
+					<Input id="jcode" placeholder="Enter Job Code..." showSuggestion="true" showValueHelp="true" valueHelpRequest="handleValueHelp"
+						suggestionItems="{domains>/domain}" valueState="None">
+						<suggestionItems>
+							<core:Item text="{domains>name}"/>
+						</suggestionItems>
+					</Input>
+					<core:Title/>
+					<Button width="8rem" text="Go" type="Emphasized" press="onRequestGo"></Button>
+				</f:content>
+			</f:SimpleForm>
+			<f:SimpleForm>
+				<!--	<f:content>
+					<Table id="idProductsTable" inset="false" items="{domains>/tableData}">
+						<headerToolbar>
+							<OverflowToolbar>
+								<content>
+									<Title text="Job Positions" level="H2"/>
+								</content>
+							</OverflowToolbar>
+						</headerToolbar>
+						<columns>
+							<Column minScreenWidth="Tablet" demandPopin="true">
+								<Text text="Job Code"/>
+							</Column>
+							<Column minScreenWidth="Tablet" demandPopin="true">
+								<Text text="Job Description"/>
+							</Column>
+							<Column minScreenWidth="Tablet" demandPopin="true">
+								<Text text="Job Position"/>
+							</Column>
+							<Column minScreenWidth="Desktop" demandPopin="true">
+								<Text text="Raised By"/>
+							</Column>
+							<Column minScreenWidth="Desktop" demandPopin="true">
+								<Text text="Raised On"/>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<Text text="{domains>Job Code}"></Text>
+									<Text text="{domains>Job Description}"></Text>
+									<Text text="{domains>Job Position}"></Text>
+									<Text text="{domains>Raised By}"></Text>
+									<Text text="{domains>Raised On}"></Text>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</f:content>-->
+			</f:SimpleForm>
+		</content>
+		<Table items="{records>/valrecords}">
+			<columns>
+				<Column>
+					<ObjectAttribute text="{i18n>Job Code}"/>
+				</Column>
+				<Column>
+					<ObjectAttribute text="{i18n>Job Description}"/>
+				</Column>
+				<Column>
+					<ObjectAttribute text="{i18n>Job Position}"/>
+				</Column>
+				<Column>
+					<ObjectAttribute text="{i18n>Raised By}"/>
+				</Column>
+				<Column>
+					<ObjectAttribute text="{i18n>Raised On}"/>
+				</Column>
+			</columns>
+			<items>
+				<ColumnListItem type="Navigation" press="showTable">
+					<cells>
+						<Text text="{records>Job Code}"></Text>
+						<Text text="{records>Job Description}"></Text>
+						<Text text="{records>Job Position}"></Text>
+						<Text text="{records>Raised By}"></Text>
+						<Text text="{records>Raised On}"></Text>
+					</cells>
+				</ColumnListItem>
+			</items>
+		</Table>
+		<!--<content>
+			<f:SimpleForm id="SimpleFormChange354wide1" editable="true" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="4" labelSpanM="4"
+				labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" emptySpanM="1" emptySpanS="0" columnsXL="4" columnsL="4" columnsM="4"
+				singleContainerFullSize="false">
+				<f:content>
+			<Label id="jobcode1" text="Job Code"/>
+			<Input id="jcode1" width="40%" placeholder=""></Input>
+				</f:content>
+			</f:SimpleForm>
+		</content>
+		
+		
+		<VBox binding="{/ProductCollection}" class="sapUiSmallMargin">
+			<RadioButton groupName="GroupA" text="" selected="true"/>
+			<RadioButton groupName="GroupA" text=""/>
+			<RadioButton groupName="GroupA" text=""/>
+		</VBox>-->
+	</Page>
+</mvc:View>
