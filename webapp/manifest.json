@@ -29,7 +29,10 @@
 			"tablet": true,
 			"phone": true
 		},
-		"supportedThemes": ["sap_hcb", "sap_belize"]
+		"supportedThemes": [
+			"sap_hcb",
+			"sap_belize"
+		]
 	},
 	"sap.ui5": {
 		"rootView": {
@@ -62,16 +65,18 @@
 				"preload": false
 			},
 			"domains": {
-				 "type": "sap.ui.model.json.JSONModel",
-				 "settings": {},
-				 "uri": "model/Domains.json",
-				 "preload": false
+				"type": "sap.ui.model.json.JSONModel",
+				"settings": {},
+				"uri": "model/Domains.json",
+				"preload": false
 			}
 		},
 		"resources": {
-			"css": [{
-				"uri": "css/style.css"
-			}]
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
 		},
 		"routing": {
 			"config": {
@@ -83,11 +88,22 @@
 				"controlId": "idAppControl",
 				"clearControlAggregation": false
 			},
-			"routes": [{
-				"name": "RouteHeader",
-				"pattern": "",
-				"target": ["TargetHeader"]
-			}],
+			"routes": [
+				{
+					"name": "RouteHeader",
+					"pattern": "RouteHeader",
+					"target": [
+						"TargetHeader"
+					]
+				},
+				{
+					"name": "RouteTile",
+					"pattern": "",
+					"target": [
+						"TargetTile"
+					]
+				}
+			],
 			"targets": {
 				"TargetApp": {
 					"viewType": "XML",
@@ -98,6 +114,10 @@
 				"TargetHeader": {
 					"viewType": "XML",
 					"viewName": "Header"
+				},
+				"TargetTile": {
+					"viewType": "XML",
+					"viewName": "Tile"
 				}
 			}
 		}
