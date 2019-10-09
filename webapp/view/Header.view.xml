@@ -100,6 +100,23 @@
 				</ColumnListItem>
 			</items>
 		</Table>
+<!--		<footer>
+			<Bar class="sapUiContentPadding">
+				<contentRight>
+					<Button text="Forword to HR for Interview" width="auto" type="Emphasized" press="Forword"/>
+				</contentRight>
+				<contentRight>
+					<Button text="Reject" type="Emphasized" width="auto" press="Rejectdata"/>
+				</contentRight>
+			</Bar>
+		</footer>-->
+		<footer>
+			<OverflowToolbar>
+				<ToolbarSpacer/>
+				<Button text="Forword to HR for Interview" width="auto" type="Accept" press="Forword"/>
+				<Button text="Reject" type="Reject" width="auto" press="Rejectdata"/>
+			</OverflowToolbar>
+		</footer>
 		<!--<content>
 			<f:SimpleForm id="SimpleFormChange354wide1" editable="true" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="4" labelSpanM="4"
 				labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" emptySpanM="1" emptySpanS="0" columnsXL="4" columnsL="4" columnsM="4"
